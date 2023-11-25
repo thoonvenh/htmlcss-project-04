@@ -128,49 +128,73 @@
             <!-- Hero -->
             <section class="hero">
                 <div class="container">
-                    <div class="hero-body">
-                        <section class="hero__media">
-                            <img
-                                src="./assets/img/Union.svg"
-                                alt=""
-                                class="hero__media--union" />
-                            <img
-                                src="./assets/img/Union-01.svg"
-                                alt=""
-                                class="hero__media--union-01" />
-                            <img
-                                src="./assets/img/hero-img-cat.png"
-                                alt=""
-                                class="hero__images" />
-                            <img
-                                src="./assets/img/hero-img-dog.png"
-                                alt=""
-                                class="hero__images--small" />
-                            <section class="hero-mini__media">
-                                <div class="hero-mini__item">
+                    <div class="hero__inner">
+                        <!-- Hero media -->
+                        <div class="hero__media">
+                            <div class="hero__img-wrap">
+                                <img
+                                    src="./assets/img/hero-img-cat.png"
+                                    alt=""
+                                    class="hero__img" />
+
+                                <!-- Decorators -->
+                                <img
+                                    src="./assets/img/Union-01.svg"
+                                    alt=""
+                                    class="hero__decor hero__decor-left" />
+                                <img
+                                    src="./assets/img/Union.svg"
+                                    alt=""
+                                    class="hero__decor hero__decor-right" />
+                            </div>
+
+                            <div class="hero__img-wrap hero__img-wrap-small">
+                                <img
+                                    src="./assets/img/hero-img-dog.png"
+                                    alt=""
+                                    class="hero__img" />
+                            </div>
+
+                            <div class="hero__list">
+                                <!-- Hero list item 1 -->
+                                <section class="hero-list-item">
                                     <img
                                         src="./assets/img/hero-img-dog-mini.png"
                                         alt=""
-                                        class="hero-mini__media--img" />
-                                    <span class="hero-mini__title">
-                                        Pet Health
-                                        <span class="hero__mini--row"></span>
-                                        <span class="hero__mini--row-02"></span>
-                                    </span>
-                                </div>
-                                <div class="hero-mini__item">
+                                        class="hero-list-item__thumb" />
+                                    <div class="hero-list-item__info">
+                                        <p class="hero-list-item__title">
+                                            Pet Health
+                                        </p>
+                                        <div
+                                            class="hero-list-item__skeleton"></div>
+                                        <div
+                                            class="hero-list-item__skeleton"
+                                            style="--width: 39px"></div>
+                                    </div>
+                                </section>
+
+                                <div class="hero-list-item__separate"></div>
+
+                                <!-- Hero list item 2 -->
+                                <section class="hero-list-item">
                                     <img
                                         src="./assets/img/hero-img-dog-mini-02.png"
                                         alt=""
-                                        class="hero-mini__media--img hero-mini__media--img01" />
-                                    <span class="hero-mini__title">
-                                        Pet care
-                                        <span class="hero__mini--row"></span>
-                                        <span class="hero__mini--row-02"></span>
-                                    </span>
-                                </div>
-                            </section>
-                        </section>
+                                        class="hero-list-item__thumb" />
+                                    <div class="hero-list-item__info">
+                                        <p class="hero-list-item__title">
+                                            Pet care
+                                        </p>
+                                        <div
+                                            class="hero-list-item__skeleton"></div>
+                                        <div
+                                            class="hero-list-item__skeleton"
+                                            style="--width: 39px"></div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
                         <section class="hero__content">
                             <h1 class="hero__heading heading lv1">
                                 Established & Trusted Pet Care Service
