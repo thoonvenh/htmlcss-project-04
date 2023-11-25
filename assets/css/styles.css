@@ -98,6 +98,12 @@ h6 {
     line-height: 1.15;
 }
 
+.heading.lv2 {
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
 .desc {
     color: #656689;
     font-size: 1.6rem;
@@ -157,8 +163,7 @@ h6 {
 /* Hero */
 
 .hero {
-    padding: 74px;
-    /* background: var(--background-color); */
+    padding: 92px 0 77px;
 }
 
 .hero__inner {
@@ -300,4 +305,124 @@ h6 {
     padding: 8px;
     font-weight: 500;
     text-decoration: underline;
+}
+
+/* About */
+
+.about {
+    padding: 53px;
+}
+
+.about__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about__content {
+    max-width: 477px;
+}
+
+.about__inner--small-item {
+    color: #5e6085;
+    font-family: Sora;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.about__heading {
+    margin-top: 15px;
+    width: 446px;
+}
+
+.about__desc {
+    margin-top: 24px;
+    width: 431px;
+}
+
+.about__row {
+    margin-top: 54px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 34px 36px;
+}
+
+.about__item {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.about__check--icon {
+    width: 24px;
+    height: 24px;
+    background: #ff5d31;
+}
+
+.about__row--sub {
+    color: #48496a;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.about__media {
+    height: 559px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.about__img-wrap {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    max-width: 494px;
+    height: 336px;
+    background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+}
+
+.about__decor {
+    position: absolute;
+}
+
+.about__media--mini-decor {
+    top: -58px;
+    left: -92px;
+    width: 136px;
+    height: 156px;
+    padding: 31px 26px;
+    text-align: center;
+    border-radius: 10px;
+    background: #5bd6e2;
+    box-shadow: -15px 26px 48px 0px rgba(85, 240, 255, 0.17);
+}
+
+.about__meida-sub {
+    color: #fff;
+    font-family: Sora;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.about__media-desc {
+    margin-top: 14px;
+    color: #c6f4f9;
+    font-size: 1.4rem;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 1.43;
+}
+
+.about__decor-02 {
+    top: -39px;
+    left: 83px;
+}
+
+.about__decor-01 {
+    z-index: -1;
+    top: -66px;
+    right: -50px;
 }
