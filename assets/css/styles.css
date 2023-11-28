@@ -29,6 +29,7 @@ select,
 button {
     font-size: inherit;
     font-family: inherit;
+    border: none;
 }
 
 a {
@@ -841,4 +842,163 @@ h6 {
 
 .staff__cta {
     min-width: 193px;
+}
+
+/* Pricing */
+.pricing {
+    padding: 86px 0;
+    background: #fff6ed;
+}
+
+.pricing__container {
+    width: 994px;
+}
+
+.pricing__heading,
+.pricing__desc {
+    text-align: center;
+}
+
+.pricing__desc {
+    margin-top: 24px;
+    margin: 0 auto;
+    width: 709px;
+}
+
+.pricing__switch-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+}
+
+.pricing__switch-inner {
+    position: relative;
+}
+
+.pricing__switch-label {
+    width: 276px;
+    height: 56px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-radius: 999px;
+    border: 1px solid #ff5b2e;
+    user-select: none;
+    cursor: pointer;
+}
+
+.pricing__switch-label::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 100%;
+    border-radius: inherit;
+    background: var(--primary-color);
+}
+
+.pricing__switch-value {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.pricing__switch-input:checked + .pricing__switch-label::before {
+    width: 131px;
+    left: auto;
+    right: 0;
+}
+
+.pricing__switch-input:not(:checked)
+    + .pricing__switch-label
+    .pricing__switch-value:nth-of-type(2),
+.pricing__switch-input:checked
+    ~ .pricing__switch-label
+    .pricing__switch-value:nth-of-type(1) {
+    color: #ff5b2e;
+}
+
+.pricing__sale-off {
+    position: absolute;
+    top: -10px;
+    right: -112px;
+}
+
+.pricing__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 44px;
+    margin-top: 56px;
+}
+
+.pricing-item {
+    padding: 30px 28px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.pricing-item__type {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.pricing-item__heading {
+    margin-top: 8px;
+    color: #3f4065;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.pricing-item__price {
+    margin-top: 24px;
+    color: #000958;
+    font-family: Sora;
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: 1.03;
+}
+
+.pricing-item__btn {
+    --height: 44px;
+
+    margin-top: 22px;
+    width: 100%;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    color: var(--primary-color);
+    background: transparent;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.pricing-item__btn:hover {
+    color: #fff;
+    background: var(--primary-color);
+    opacity: 1;
+}
+
+.pricing-item__list {
+    margin-top: 24px;
+}
+
+.pricing-item__item {
+    margin-top: 18px;
+    display: flex;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.pricing-item__item::before {
+    content: url(../img/Check.svg);
+    margin-right: 12px;
 }
